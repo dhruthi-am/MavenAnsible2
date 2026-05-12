@@ -1,10 +1,10 @@
--name: Deplot to Tomcat
+-name: Deploy to Tomcat
  host: web
  become: yes
  tasks:
  	-name: Copy WAR file to Tomcat
  	copy:
-	 	src: "/var/snap/jenkins/5013/workspace/MavenAnsible2/target/MavenAnsible.war"
+	 	src: "/var/snap/jenkins/5022/workspace/MavenAnsible2/target/MavenAnsible.war"
 	 	dest: 
 	 	remote_src: mo
 	 -name: Restart Tomcat

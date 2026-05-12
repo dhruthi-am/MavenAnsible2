@@ -4,7 +4,7 @@ pipeline{
 			maven 'Maven'
 		}
 		stages{
-			stage('Checkout){
+			stage('Checkout'){
 				steps{
 					git branch:'master', url:'https://github.com/dhruthi-am/MavenAnsible2.git'
 				}
